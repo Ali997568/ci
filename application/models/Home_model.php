@@ -6,10 +6,9 @@ class Home_model extends CI_Model{
 		parent::__Construct();
 		$this->db = $this->load->database("school", TRUE);
 	}
-	function getData()
+	function insertData()
 	{
-		$query = $this->db->get("student");
-		return $query;
+
 	}
 }
 

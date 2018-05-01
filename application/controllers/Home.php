@@ -6,12 +6,21 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model("home_model");
+		//$this->load->model("Home_model");
 	}
 
 	function index()
 	{
-		$getmodel["result"] = $this->home_model->getData();
-		$this->load->view("home_view", $getmodel);
+		$this->load->view('home_view');
+		// $getmodel["result"] = $this->home_model->insertData();
+		// $this->load->view("home_view", $getmodel);
 	}
+
+	function addDept()
+	{
+		echo "Ok";
+	}
+
+
+
 }
